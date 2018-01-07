@@ -138,6 +138,9 @@
                                         <state key="normal" title="Mens ">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMensTapped:" destination="1ba-4s-D8h" eventType="touchUpInside" id="na6-2W-vSp"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPr-RK-aa2" customClass="BorderButton" customModule="spin_around" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="54" width="343" height="34"/>
@@ -149,6 +152,9 @@
                                         <state key="normal" title="Womens">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onWomensTapped:" destination="1ba-4s-D8h" eventType="touchUpInside" id="OAb-Li-61J"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jxv-mB-9zk" customClass="BorderButton" customModule="spin_around" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="108" width="343" height="34"/>
@@ -160,10 +166,13 @@
                                         <state key="normal" title="Co-ed">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onCoedTapped:" destination="1ba-4s-D8h" eventType="touchUpInside" id="Rcy-Od-t7C"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veA-pA-UnJ" customClass="BorderButton" customModule="spin_around" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veA-pA-UnJ" customClass="BorderButton" customModule="spin_around" customModuleProvider="target">
                                 <rect key="frame" x="16" y="708" width="343" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -174,7 +183,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="onNextTapped:" destination="1ba-4s-D8h" eventType="touchUpInside" id="WJF-x5-YJv"/>
+                                    <action selector="onNextTapped:" destination="1ba-4s-D8h" eventType="touchUpInside" id="yp1-NX-SCm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ldr-VC-Uam">
@@ -210,6 +219,7 @@
                         <viewLayoutGuide key="safeArea" id="BMR-Oa-lbl"/>
                     </view>
                     <connections>
+                        <outlet property="onNextTappedOutlet" destination="veA-pA-UnJ" id="3cO-je-axa"/>
                         <segue destination="GrN-91-Ynr" kind="show" identifier="skillVCSegue" id="Ml7-EO-5vN"/>
                     </connections>
                 </viewController>

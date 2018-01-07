@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA4CF77120023D6C00A13976 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4CF77020023D6C00A13976 /* Player.swift */; };
 		EA4EA0D11FF79E9600A56D0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4EA0D01FF79E9600A56D0F /* AppDelegate.swift */; };
 		EA4EA0D31FF79E9600A56D0F /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4EA0D21FF79E9600A56D0F /* WelcomeVC.swift */; };
 		EA4EA0D61FF79E9600A56D0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA4EA0D41FF79E9600A56D0F /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA4CF77020023D6C00A13976 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		EA4EA0CD1FF79E9600A56D0F /* spin-around.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "spin-around.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA4EA0D01FF79E9600A56D0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA4EA0D21FF79E9600A56D0F /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 		EAFF35291FFF706100493CF9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EA4CF77020023D6C00A13976 /* Player.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				EAFF352C1FFF71E700493CF9 /* LeagueVC.swift in Sources */,
 				EA4EA0D11FF79E9600A56D0F /* AppDelegate.swift in Sources */,
 				EAFF352E1FFF720100493CF9 /* SkillVC.swift in Sources */,
+				EA4CF77120023D6C00A13976 /* Player.swift in Sources */,
 				EA4EA0E41FF7A75700A56D0F /* BorderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
