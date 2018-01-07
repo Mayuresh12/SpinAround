@@ -15,13 +15,13 @@ class LeagueVC: UIViewController {
         performSegue(withIdentifier: "skillVCSegue", sender: self)
     }
     @IBAction func onMensTapped(_ sender: Any) {
-        selectLeague(leagueType: "men")
+        selectLeague(leagueType: "Mens")
     }
     @IBAction func onWomensTapped(_ sender: Any) {
-        selectLeague(leagueType: "women")
+        selectLeague(leagueType: "Womens")
     }
     @IBAction func onCoedTapped(_ sender: Any) {
-        selectLeague(leagueType: "coed")
+        selectLeague(leagueType: "Coed")
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,5 +37,11 @@ class LeagueVC: UIViewController {
         player.desiredLeague = leagueType
         onNextTappedOutlet.isEnabled = true
     }
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let skillVC = segue.destination  as? SkillVC{
+            skillVC.player = player
+            
+            
+        }
+    }
 }
